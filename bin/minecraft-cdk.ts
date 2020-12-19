@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from '@aws-cdk/core';
-import { InfraStack } from '../lib/infra-stack';
+import { MinecraftCdkStack } from '../lib/minecraft-cdk-stack';
 
 const app = new cdk.App();
-new InfraStack(app, 'InfraStack');
+new MinecraftCdkStack(app, 'MinecraftCdkStack');
